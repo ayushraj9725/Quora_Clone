@@ -1,0 +1,159 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: white;
+    
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--quora-red);
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.auth-box {
+    background-color: rgb(45, 43, 43);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+}
+
+.terms-notice {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.auth-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.google-btn {
+    color: #5f6368;
+}
+
+.facebook-btn {
+    color: #3b5998;
+}
+
+.auth-option.google-btn {
+    border-color: #4285f4;
+}
+
+.auth-option.facebook-btn {
+    border-color: #1877f2;
+}
+
+.auth-option:hover {
+    background: #f5f5f5;
+}
+
+.auth-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent;
+}
+
+/* Optional: Add specific background color for Facebook/Google buttons if desired */
+.google-btn {
+    color: #4285f4;
+}
+
+.facebook-btn {
+    color: #1877f2;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+.auth-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.auth-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.auth-footer a {
+    color: var(--quora-red);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.forgot-password {
+    float: right;
+}

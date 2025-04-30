@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Quora Clone</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/profile.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../home/index.html" class="logo">Quora</a>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Quora">
+                </div>
+
+                <div class="user-menu">
+                    <a href="../notifications.html" class="notification-icon">
+                        <img src="../../assets/images/bell-icon.png" alt="Notifications" width="20">
+                    </a>
+                    <a href="view.html">
+                        <img src="../../assets/images/default-avatar.jpg" alt="Profile" class="user-avatar">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="profile-edit-container">
+                <h1>Edit Profile</h1>
+
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website">Website</label>
+                        <input type="url" id="website">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Profile Picture</label>
+                        <div class="avatar-upload">
+                            <img src="../../assets/images/default-avatar.jpg" alt="Profile" id="avatarPreview"
+                                class="avatar-preview">
+                            <input type="file" id="avatarUpload" accept="image/*">
+                            <label for="avatarUpload" class="btn btn-outline">Change Photo</label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../../assets/js/profile.js"></script>
+</body>
+
+</html>

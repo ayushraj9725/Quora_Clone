@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora Login Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-image: url('background-image.jpg');
+            /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .auth-container {
+            background-color: rgba(24, 24, 24, 0.95);
+            padding: 2rem;
+            border-radius: 10px;
+            width: 400px;
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            color: #b92b27;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .terms-notice {
+            font-size: 0.75rem;
+            color: #aaa;
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .auth-option {
+            width: 100%;
+            padding: 0.7rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .google-btn {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .facebook-btn {
+            background-color: #1877f2;
+            color: #fff;
+        }
+
+        .auth-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 1rem 0;
+            color: #888;
+        }
+
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-size: 0.85rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #2d8cff;
+            border: none;
+            padding: 0.7rem;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .auth-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.8rem;
+            font-size: 0.8rem;
+        }
+
+        .auth-footer a {
+            color: #2d8cff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="auth-container">
+        <h1 class="logo">Quora</h1>
+        <p class="tagline">A place to share knowledge and better understand the world</p>
+
+        <div class="terms-notice">
+            By continuing you indicate that you agree to Quora's <a href="#">Terms of Service</a> and <a
+                href="#">Privacy Policy</a>.
+        </div>
+
+        <button class="auth-option google-btn">
+            <img src="google-icon.png" alt="Google" class="auth-icon">
+            Continue with Google
+        </button>
+
+        <button class="auth-option facebook-btn">
+            <img src="facebook-icon.png" alt="Facebook" class="auth-icon">
+            Continue with Facebook
+        </button>
+
+        <div class="divider">
+            <a href="../auth/signup.html">Sign up with email</a>
+        </div>
+
+        <form class="auth-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Your password" required>
+            </div>
+
+            <button type="submit" class="btn-primary">Login</button>
+
+            <div class="auth-footer">
+                <a href="#">Forgot password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

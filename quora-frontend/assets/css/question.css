@@ -1,0 +1,150 @@
+.ask-question-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.ask-question-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ask-question-form {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.question-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.question-detail {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.question-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.question-detail-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.question-detail-content {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.question-detail-actions {
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.answers-section {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.answers-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.add-answer-form {
+    margin-bottom: 30px;
+}
+
+.add-answer-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 15px;
+    min-height: 100px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.answer-card {
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+}
+
+.answer-card:last-child {
+    border-bottom: none;
+}
+
+.answer-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.answer-user {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.answer-content {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.answer-actions {
+    display: flex;
+    gap: 15px;
+}

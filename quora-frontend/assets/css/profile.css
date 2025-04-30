@@ -1,0 +1,134 @@
+.profile-container {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.profile-header {
+    position: relative;
+}
+
+.profile-cover {
+    height: 150px;
+    background-color: #f0f0f0;
+}
+
+.profile-info {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-top: -50px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.profile-bio {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.profile-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-tabs .tab-btn {
+    padding: 15px 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-secondary);
+    position: relative;
+}
+
+.profile-tabs .tab-btn.active {
+    color: var(--quora-red);
+}
+
+.profile-tabs .tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--quora-red);
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+.profile-edit-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.profile-edit-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-form {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#avatarUpload {
+    display: none;
+}

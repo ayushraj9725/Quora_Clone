@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Quora Clone</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/home.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Quora</a>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Quora">
+                </div>
+
+                <div class="user-menu">
+                    <a href="../notifications.html" class="notification-icon">
+                        <img src="../../assets/images/bell-icon.png" alt="Notifications" width="20">
+                    </a>
+                    <a href="../profile/view.html">
+                        <img src="../../assets/images/default-avatar.jpg" alt="Profile" class="user-avatar">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Left Sidebar -->
+                <aside class="left-sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="index.html" class="nav-item active">
+                            <img src="../../assets/images/home-icon.png" alt="Home">
+                            <span>Home</span>
+                        </a>
+                        <a href="#" class="nav-item">
+                            <img src="../../assets/images/answer-icon.png" alt="Answer">
+                            <span>Answer</span>
+                        </a>
+                        <a href="../spaces/list.html" class="nav-item">
+                            <img src="../../assets/images/spaces-icon.png" alt="Spaces">
+                            <span>Spaces</span>
+                        </a>
+                        <a href="../notifications.html" class="nav-item">
+                            <img src="../../assets/images/notifications-icon.png" alt="Notifications">
+                            <span>Notifications</span>
+                        </a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="main-feed">
+                    <div class="ask-question-box">
+                        <div class="ask-question-header">
+                            <img src="../../assets/images/default-avatar.jpg" alt="User" class="user-avatar">
+                            <input type="text" placeholder="What is your question?">
+                        </div>
+                        <div class="ask-question-footer">
+                            <button class="btn btn-outline">Add Question</button>
+                        </div>
+                    </div>
+
+                    <div class="feed-tabs">
+                        <button class="tab-btn active">For You</button>
+                        <button class="tab-btn">Following</button>
+                    </div>
+
+                    <div id="questionsList" class="questions-list">
+                        <!-- Questions will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <aside class="right-sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Spaces to follow</h3>
+                        <div id="spacesList" class="spaces-list">
+                            <!-- Spaces will be loaded here -->
+                        </div>
+                        <a href="../spaces/list.html" class="see-all">See all</a>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Credits</h3>
+                        <p>You have <strong>125</strong> credits</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Careers</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+                <a href="#" class="footer-link">Languages</a>
+                <a href="#" class="footer-link">Your Ad Choices</a>
+                <a href="#" class="footer-link">© Quora Clone 2023</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../../assets/js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaces - Quora Clone</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/spaces.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../home/index.html" class="logo">Quora</a>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Quora">
+                </div>
+
+                <div class="user-menu">
+                    <a href="../notifications.html" class="notification-icon">
+                        <img src="../../assets/images/bell-icon.png" alt="Notifications" width="20">
+                    </a>
+                    <a href="../profile/view.html">
+                        <img src="../../assets/images/default-avatar.jpg" alt="Profile" class="user-avatar">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="spaces-header">
+                <h1>Spaces</h1>
+                <button class="btn btn-primary">Create Space</button>
+            </div>
+
+            <div class="spaces-grid" id="spacesGrid">
+                <!-- Spaces will be loaded here -->
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../../assets/js/spaces.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Detail - Quora Clone</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/question.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../home/index.html" class="logo">Quora</a>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Quora">
+                </div>
+
+                <div class="user-menu">
+                    <a href="../notifications.html" class="notification-icon">
+                        <img src="../../assets/images/bell-icon.png" alt="Notifications" width="20">
+                    </a>
+                    <a href="../profile/view.html">
+                        <img src="../../assets/images/default-avatar.jpg" alt="Profile" class="user-avatar">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="question-detail-container">
+                <div id="questionDetail" class="question-detail">
+                    <!-- Question will be loaded here -->
+                </div>
+
+                <div class="answers-section">
+                    <h2>Answers</h2>
+
+                    <form id="addAnswerForm" class="add-answer-form">
+                        <textarea placeholder="Write your answer..." required></textarea>
+                        <button type="submit" class="btn btn-primary">Post Answer</button>
+                    </form>
+
+                    <div id="answersList" class="answers-list">
+                        <!-- Answers will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../../assets/js/question.js"></script>
+</body>
+
+</html>

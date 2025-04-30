@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Question - Quora Clone</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/question.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../home/index.html" class="logo">Quora</a>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Quora">
+                </div>
+
+                <div class="user-menu">
+                    <a href="../notifications.html" class="notification-icon">
+                        <img src="../../assets/images/bell-icon.png" alt="Notifications" width="20">
+                    </a>
+                    <a href="../profile/view.html">
+                        <img src="../../assets/images/default-avatar.jpg" alt="Profile" class="user-avatar">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="ask-question-container">
+                <h1>Add Question</h1>
+
+                <form id="askQuestionForm">
+                    <div class="form-group">
+                        <label for="questionTitle">Question Title*</label>
+                        <input type="text" id="questionTitle" placeholder="What is your question?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="questionDetails">Details (optional)</label>
+                        <textarea id="questionDetails" rows="5"
+                            placeholder="Add more details to your question..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="questionTopics">Topics</label>
+                        <input type="text" id="questionTopics"
+                            placeholder="Add topics to help others find your question">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Add Question</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../../assets/js/question.js"></script>
+</body>
+
+</html>
